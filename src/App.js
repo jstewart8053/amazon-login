@@ -7,10 +7,12 @@ const App = () => {
 
   return (
     <div className='App'>
-      <div className='outside-container'>
-        <img src={logo} alt='amazon logo' role="img" />
-        <Signup />
-      </div>
+      <img src={logo} alt='amazon logo' role="img" />
+
+      <Signup />
+      <hr />
+
+
       <footer>
         <span> Conditions of Use </span>
         <span> Privacy </span>

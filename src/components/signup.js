@@ -18,7 +18,7 @@ const Signup = () => {
                 <button input type='submit'> Create your Amazon account </button>
                 <p> By creating an account, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
                 <hr />
-                <p> Already have an account? Sign-in </p>
+                <p> Already have an account?  <span>Sign-in</span> </p>
             </div>
         </form>
     )

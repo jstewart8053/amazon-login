@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("/src/fonts/Ember.woff2") format("woff2"),
+    url("/src/fonts/EmberBold.woff2") format("woff2");
+}
+
 html,
 body {
   margin: 0px;
   padding: 0px;
   outline: none;
+  box-sizing: border-box;
+  font-family: "Ember", Arial, sans-serif;
+  font-size: 13px;
 }
 
 .App {
@@ -11,7 +20,7 @@ body {
   align-items: center;
   margin: auto;
   flex-direction: column;
-  font-family: "Amazon Ember", Arial, sans-serif;
+
   text-align: center;
   background: #fff;
   border-radius: 4px;
@@ -21,10 +30,36 @@ body {
 img {
   height: 31px;
   width: 103px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.label-text {
+.form-container {
+  width: 350px;
+  height: 518px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+  outline: 1px solid black;
+}
+
+h1 {
+  font-family: "Ember", Arial, sans-serif;
+  font-size: 28px;
+  padding-bottom: 4px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+label {
   font-size: 13px;
+  font-family: "EmberBold", Arial, sans-serif;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  font-weight: 700;
 }
 
 button {
@@ -32,7 +67,20 @@ button {
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   cursor: pointer;
   color: #111;
-  border-radius: 3px;
   width: 200px;
   height: 29px;
+  border-radius: 3px;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+
+span {
+  color: #0066c0;
 }
