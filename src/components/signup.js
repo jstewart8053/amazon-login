@@ -12,11 +12,16 @@ const Signup = () => {
             <div className='form-container'>
                 <h1> Create account </h1>
                 <label> Your name </label>
+                <input name="userName" autocomplete="on" ref={register({ required: true, maxLength: 50 })} />
                 <label> Email </label>
+                <input name="email" ref={register({ required: true, maxLength: 64 })} />
                 <label> Password </label>
+                <input name="password" placeholder="At least 6 characters" autocomplete="off" ref={register({ required: true, maxLength: 1024 })} />
+                <p class='alertText'> ι Passwords must be at least 6 characters. </p>
                 <label> Re-enter password </label>
+                <input name="re-password" autocomplete="off" ref={register({ required: true, maxLength: 50 })} />
                 <button input type='submit'> Create your Amazon account </button>
-                <p> By creating an account, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
+                <p> By creating an account, you agree to Amazon's <span>Conditions</span> of Use and <span> Privacy Notice. </span> </p>
                 <hr />
                 <p> Already have an account?  <span>Sign-in</span> </p>
             </div>
