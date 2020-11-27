@@ -26,7 +26,7 @@ const Signup = () => {
                 <input name="re-password" autocomplete="off" ref={register({ required: true, maxLength: 50 })} />
                 <button input type='submit'> Create your Amazon account </button>
                 <p> By creating an account, you agree to Amazon's </p>
-                <p> <span>Conditions</span> of Use and <span> Privacy Notice. </span> </p>
+                <p> <span className="sm-font">Conditions</span> of Use and <span className='sm-font'> Privacy Notice. </span></p>
                 <img src={hr} className="hr1" alt="horizontal line" role="img" />
                 <p> Already have an account?  <span>Sign-in</span> </p>
             </div>

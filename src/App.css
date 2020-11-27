@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "Amazon Ember";
-  src: url("/src/fonts/Ember.woff2") format("woff2"),
-    url("/src/fonts/EmberBold.woff2") format("woff2");
+  font-family: "ember-webfont";
+  src: url("./fonts/Fonts/ember-webfont.woff") format("woff");
 }
 
 html,
@@ -10,7 +9,7 @@ body {
   padding: 0px;
   outline: none;
   box-sizing: border-box;
-  font-family: "Ember", Arial, sans-serif;
+  font-family: "ember-webfont";
   font-size: 13px;
 }
 
@@ -35,8 +34,8 @@ body {
 }
 
 .form-container {
-  width: 348px;
-  height: 516px;
+  width: 325px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -45,19 +44,15 @@ body {
   margin-bottom: 5px;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
-  padding: 14px 18px;
-}
-
-.alertText {
-  margin-top: 0px;
-  margin-right: 15px;
-  padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 14px;
+  padding-top: 14px;
 }
 
 h1 {
   margin-top: 0px;
   padding-top: 5px;
-  font-family: "Ember", Arial, sans-serif;
+  font-family: "ember-webfont";
   text-rendering: optimizeLegibility;
   font-size: 28px;
   padding-bottom: 2px;
@@ -67,11 +62,12 @@ h1 {
 label {
   margin-left: 15px;
   font-size: 13px;
-  font-family: "EmberBold", Arial, sans-serif;
+  font-weight: 700;
+  color: #111111;
+  line-height: 19px;
   padding-left: 2px;
   padding-bottom: 2px;
   padding-top: 7px;
-  font-weight: 700;
 }
 
 input {
@@ -80,8 +76,8 @@ input {
   margin-right: 15px;
   margin-bottom: 5px;
   font-size: 13.33px;
-  height: 25px;
-  width: 313px;
+  height: 23px;
+  width: 292px;
   padding: 3px 7px;
   line-height: 19;
   border-radius: 3px;
@@ -97,21 +93,19 @@ input:focus {
 
 button {
   margin: auto;
+  margin-left: 15px;
   margin-top: 7px;
   margin-bottom: 15px;
-  margin-right: 3px;
-  border-color: #a88734 #9c7e31 #846a29;
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   cursor: pointer;
   color: #111;
-  width: 330px;
+  width: 310px;
   height: 29px;
   border-radius: 3px;
   border-color: #adb1b8 #a2a6ac #8d9096;
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
-  display: inline-block;
   padding: 0;
   text-align: center;
   text-decoration: none !important;
@@ -129,10 +123,18 @@ div.form-container p {
   padding: 0px;
   color: #111;
 }
+
+div.form-container p:last-child {
+  font-size: 13px;
+}
 /* blue text since links aren't real :) */
 span {
   font-size: 13px;
   color: #0066c0;
+}
+
+.sm-font {
+  font-size: 12px;
 }
 
 img.hr1 {
@@ -146,7 +148,7 @@ img.iFont {
   margin-left: 15px;
   margin-right: 5px;
   padding: 0px;
-  width: 11px;
+  width: 8px;
   height: 13px;
 }
 
