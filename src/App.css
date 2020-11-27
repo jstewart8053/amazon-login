@@ -20,14 +20,13 @@ body {
   align-items: center;
   margin: auto;
   flex-direction: column;
-
   text-align: center;
   background: #fff;
   border-radius: 4px;
   line-height: 19px;
 }
 
-img {
+.logo {
   height: 31px;
   width: 103px;
   margin-top: 15px;
@@ -36,13 +35,14 @@ img {
 }
 
 .form-container {
-  width: 350px;
-  height: 518px;
+  width: 348px;
+  height: 516px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   margin: auto;
+  margin-bottom: 5px;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
   padding: 14px 18px;
@@ -55,11 +55,13 @@ img {
 }
 
 h1 {
+  margin-top: 0px;
+  padding-top: 5px;
   font-family: "Ember", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
   font-size: 28px;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   font-weight: 400;
-  line-height: 1.2;
 }
 /* add alerts if info is missed */
 label {
@@ -68,6 +70,7 @@ label {
   font-family: "EmberBold", Arial, sans-serif;
   padding-left: 2px;
   padding-bottom: 2px;
+  padding-top: 7px;
   font-weight: 700;
 }
 
@@ -77,8 +80,8 @@ input {
   margin-right: 15px;
   margin-bottom: 5px;
   font-size: 13.33px;
-  height: 23px;
-  width: 85%;
+  height: 25px;
+  width: 313px;
   padding: 3px 7px;
   line-height: 19;
   border-radius: 3px;
@@ -94,11 +97,14 @@ input:focus {
 
 button {
   margin: auto;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  margin-right: 3px;
   border-color: #a88734 #9c7e31 #846a29;
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   cursor: pointer;
   color: #111;
-  width: 90%;
+  width: 330px;
   height: 29px;
   border-radius: 3px;
   border-color: #adb1b8 #a2a6ac #8d9096;
@@ -111,12 +117,45 @@ button {
   text-decoration: none !important;
   vertical-align: middle;
 }
+
+.passwordColor,
+p.passwordColor {
+  color: #2b2b2b !important;
+}
+
+div.form-container p {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  color: #111;
+}
 /* blue text since links aren't real :) */
 span {
   font-size: 13px;
   color: #0066c0;
 }
 
-footer > span {
+img.hr1 {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+img.iFont {
+  margin-left: 15px;
+  margin-right: 5px;
+  padding: 0px;
+  width: 11px;
+  height: 13px;
+}
+
+footer {
   padding: 15px;
+  font-size: 11px;
+  color: #555;
+}
+
+footer + span {
+  margin-right: 15px;
 }

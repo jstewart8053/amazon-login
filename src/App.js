@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
 import logo from './assets/logo.png';
+import hr1 from './assets/hr1.png'
 import Signup from './components/Signup';
 
 const App = () => {
 
   return (
     <div className='App'>
-      <img src={logo} alt='amazon logo' role="img" />
+      <img src={logo} className="logo" alt="amazon logo" role="img" />
 
       <Signup />
-      <hr />
+      <img src={hr1} className="hr" alt="horizontal line" role="img" />
 
 
       <footer>
