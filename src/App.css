@@ -59,7 +59,7 @@ h1 {
   padding-bottom: 2px;
   font-weight: 400;
 }
-/* add alerts if info is missed */
+
 label {
   margin-left: 15px;
   font-size: 13px;
@@ -86,10 +86,27 @@ input {
   border-top-color: #949494;
   cursor: text;
 }
-/* not changing color */
+
+/* changes color when selected */
+
 input:focus {
   border: 1px solid #ff9900;
-  border-top-color: #ff9900;
+  border-color: #e77600;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+  outline: 0;
+}
+
+/* assign alertInput for when user doesn't enter input correctly */
+
+.alertInput {
+  color: #d00;
+  border-color: #c40000;
+  box-shadow: 0 0 0 3px rgba(221, 0, 0, 0.1) inset;
+}
+/* assign alertText for when user doesn't enter text correctly */
+
+.alertFont {
+  color: #c40000;
 }
 
 button {
@@ -111,6 +128,16 @@ button {
   text-align: center;
   text-decoration: none !important;
   vertical-align: middle;
+}
+button:hover {
+  background: linear-gradient(to bottom, #f7dfa5, #ecb21e);
+}
+
+button:active {
+  background-color: #ed9220;
+  border-color: #ca7c1b #be751a #be751a;
+  box-shadow: 0 0 3px 2px rgba(228, 121, 17, 0.5);
+  outline: 0;
 }
 
 button ~ p {
@@ -138,6 +165,12 @@ div.form-container p:last-child {
 span {
   font-size: 13px;
   color: #0066c0;
+}
+
+span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c45500;
 }
 
 .sm-font {
