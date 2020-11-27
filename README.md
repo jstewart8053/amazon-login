@@ -2,5 +2,5 @@
 
 ### Made for educational purposes, not to be used in production
 
-To run on your computer, clone, npm install, npm start
+To run on your computer, clone, npm install, npm start.
 Made with React Hook Forms, and good old fashioned CSS.
