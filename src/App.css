@@ -51,6 +51,7 @@ body {
 
 h1 {
   margin-top: 0px;
+  margin-left: 8px;
   padding-top: 5px;
   font-family: "ember-webfont";
   text-rendering: optimizeLegibility;
@@ -112,9 +113,15 @@ button {
   vertical-align: middle;
 }
 
+button ~ p {
+  padding-left: 15px !important;
+}
+
 .passwordColor,
 p.passwordColor {
   color: #2b2b2b !important;
+  margin-bottom: 3px !important;
+  margin-top: 2px;
 }
 
 div.form-container p {
@@ -153,6 +160,9 @@ img.iFont {
 }
 
 footer {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
   padding: 15px;
   font-size: 11px;
   color: #555;
@@ -160,4 +170,9 @@ footer {
 
 footer + span {
   margin-right: 15px;
+}
+
+.copyright {
+  color: #555;
+  margin-top: -5px;
 }

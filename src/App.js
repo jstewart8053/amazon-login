@@ -16,10 +16,10 @@ const App = () => {
 
       <footer>
         <span> Conditions of Use </span>
-        <span> Privacy </span>
+        <span> Privacy Notice </span>
         <span> Help </span>
-        <p> © 1996-2020, Amazon.com, Inc. or its affiliates </p>
       </footer>
+      <p className='sm-font copyright'> © 1996-2020, Amazon.com, Inc. or its affiliates </p>
     </div>
   )
 }
