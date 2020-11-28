@@ -15,9 +15,9 @@ const App = () => {
 
 
       <footer>
-        <span> Conditions of Use </span>
-        <span> Privacy Notice </span>
-        <span> Help </span>
+        <span className="sm-font"> Conditions of Use </span>
+        <span className="sm-font">Privacy Notice </span>
+        <span className="sm-font"> Help </span>
       </footer>
       <p className='sm-font copyright'> © 1996-2020, Amazon.com, Inc. or its affiliates </p>
     </div>
