@@ -8,10 +8,10 @@ const App = () => {
 
   return (
     <div className='App'>
-      <img src={logo} className="logo" alt="amazon logo" role="img" />
+      <img src={logo} className="logo" alt="amazon logo" />
 
       <Signup />
-      <img src={hr1} className="hr" alt="horizontal line" role="img" />
+      <img src={hr1} className="hr" alt="horizontal line" />
 
 
       <footer>

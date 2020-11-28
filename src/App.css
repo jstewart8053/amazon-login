@@ -35,7 +35,6 @@ body {
 
 .form-container {
   width: 325px;
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -72,7 +71,6 @@ label {
 }
 
 input {
-  overflow: hidden;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 5px;
@@ -103,10 +101,23 @@ input:focus {
   border-color: #c40000;
   box-shadow: 0 0 0 3px rgba(221, 0, 0, 0.1) inset;
 }
-/* assign alertText for when user doesn't enter text correctly */
 
-.alertFont {
+/* text output under input if any fields produce errors */
+
+.alertText {
+  text-align: left;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 15px;
   color: #c40000;
+}
+
+.alertText::before {
+  content: "!";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 5px;
 }
 
 button {
@@ -160,6 +171,8 @@ div.form-container p {
 
 div.form-container p:last-child {
   font-size: 13px;
+  line-height: 19px;
+  padding-bottom: 14px;
 }
 /* blue text since links aren't real :) */
 span {
