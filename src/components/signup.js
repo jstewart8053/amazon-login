@@ -12,17 +12,17 @@ const SignupSchema = yup.object().shape({
         .required("Enter your name"),
     email: yup
         .string()
-        .email("Enter your email")
+        .email("Enter a valid email address")
         .max(1064)
-        .required("Enter a valid email"),
+        .required("Enter your email"),
     password: yup
         .string()
         .min(6, "Passwords must be at least 6 characters")
         .required("Enter your password"),
     rePassword: yup
         .string()
-        .required('Passwords must match')
-        .oneOf([yup.ref('password')])
+        .required('Type your password again')
+        .oneOf([yup.ref('password')], 'Passwords must match')
 });
 
 
@@ -46,6 +46,7 @@ const Signup = () => {
 
                 <label> Your name </label>
                 <input
+                    className={errors.userName && 'alertInput'}
                     name="userName"
                     type="text"
                     autoComplete="on"
@@ -56,6 +57,7 @@ const Signup = () => {
 
                 <label> Email </label>
                 <input
+                    className={errors.email && 'alertInput'}
                     name="email"
                     type="text"
                     autoComplete="on"
@@ -64,7 +66,7 @@ const Signup = () => {
 
                 <label> Password </label>
                 <input
-                    className='passwordColor'
+                    className={errors.password ? 'alertInput' : 'passwordColor'}
                     name="password"
                     type="text"
                     autoComplete="off"
@@ -79,6 +81,7 @@ const Signup = () => {
 
                 <label> Re-enter password </label>
                 <input
+                    className={errors.rePassword && 'alertInput'}
                     name="rePassword"
                     autoComplete="off"
                     ref={register} />
