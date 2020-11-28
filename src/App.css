@@ -40,7 +40,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   margin: auto;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
   padding-left: 10px;
@@ -83,6 +83,7 @@ input {
   border: 1px solid #a6a6a6;
   border-top-color: #949494;
   cursor: text;
+  text-rendering: optimizeLegibility !important;
 }
 
 /* changes color when selected */
@@ -97,7 +98,6 @@ input:focus {
 /* assign alertInput for when user doesn't enter input correctly */
 
 .alertInput {
-  color: #d00;
   border-color: #c40000;
   box-shadow: 0 0 0 3px rgba(221, 0, 0, 0.1) inset;
 }
@@ -106,6 +106,7 @@ input:focus {
 
 .alertText {
   text-align: left;
+  margin-bottom: 3px;
   padding-left: 16px;
   font-size: 12px;
   line-height: 15px;
@@ -120,11 +121,17 @@ input:focus {
   padding-right: 5px;
 }
 
+/* Text under password will not be replaced with red exclamation and password text */
+
+.displayNone {
+  display: none;
+}
+
 button {
   margin: auto;
   margin-left: 15px;
-  margin-top: 7px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 17px;
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   cursor: pointer;
   color: #111;
@@ -134,7 +141,6 @@ button {
   border-color: #adb1b8 #a2a6ac #8d9096;
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
   padding: 0;
   text-align: center;
   text-decoration: none !important;
@@ -154,6 +160,8 @@ button:active {
 button ~ p {
   padding-left: 15px !important;
 }
+
+/* .passwordColor refers to the text info text under the password input */
 
 .passwordColor,
 p.passwordColor {

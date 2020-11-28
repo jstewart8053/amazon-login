@@ -33,10 +33,6 @@ const Signup = () => {
     const onSubmit = data => {
         console.log(JSON.stringify(data));
     };
-    // alert text is:
-    // enter a valid name/email address
-    // Passwords must be at least 6 characters
-    // Passowrds must match
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -53,7 +49,6 @@ const Signup = () => {
                     ref={register}
                 />
                 {errors.userName && <div className="alertText"> {errors.userName.message} </div>}
-
 
                 <label> Email </label>
                 <input
@@ -74,7 +69,7 @@ const Signup = () => {
                     ref={register} />
                 {errors.password && <div className="alertText"> {errors.password.message} </div>}
 
-                <p className='passwordColor'>
+                <p className={errors.password ? 'displayNone' : 'passwordColor'}>
                     <img src={iFont} className="iFont" alt="info icon" />
                  Passwords must be at least 6 characters. </p>
 
@@ -100,6 +95,5 @@ const Signup = () => {
             </div>
         </form>
     )
-
 }
 export default Signup;
