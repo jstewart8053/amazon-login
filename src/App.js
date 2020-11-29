@@ -4,6 +4,7 @@ import logo from './assets/logo.png';
 import hr1 from './assets/hr1.png'
 import Signup from './components/Signup';
 
+
 const App = () => {
 
   return (
@@ -12,7 +13,6 @@ const App = () => {
 
       <Signup />
       <img src={hr1} className="hr" alt="horizontal line" />
-
 
       <footer>
         <span className="sm-font"> Conditions of Use </span>
