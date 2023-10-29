@@ -3,7 +3,6 @@
 To run on your computer, clone project, npm install, npm start.
 Made with React Hook Forms, Yup for validation, and good old fashioned CSS.
 
-### To view live live app, please go to https://login-clone.web.app/
 *User input is output to the console only, not saved or stored anywhere on the web.
 Made for educational purposes, not to be used in production.*
 
